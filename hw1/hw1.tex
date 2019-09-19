@@ -1,0 +1,111 @@
+\documentclass[11pt]{article}
+
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{-0.5in}
+\setlength{\textheight}{8.75in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{HW1}
+\rhead{Reza Shisheie}
+
+\usepackage{epsfig,graphicx}
+
+\usepackage{amsmath}
+
+\usepackage{clrscode3e}
+
+\begin{document}
+
+\thispagestyle{plain}
+
+\begin{center}
+{\Large \bf CIS 606 \hfil Homework 1 \hfil Fall 2019} \\
+\end{center}
+
+\vskip 1in 
+
+\centerline{\includegraphics[width=3in]{photo.jpg}}
+
+\vskip 0.5in 
+
+\begin{center}
+\begin{tabular}{ll}
+{\bf Name:}     & {\bf Reza Shisheie } \\ \\
+{\bf Login ID:} & {\bf 2708062 }   
+\end{tabular}
+\end{center}
+
+\newpage
+
+\begin{enumerate}
+
+\itemsep 0.35in
+
+\item We can sum $\sum_{k=1}^{n} k = \frac{ n ( n + 1)}{2} $ inside text or
+      use the displayed math like below:
+      
+      \[
+        \sum_{k=1}^{n} k = 1 + 2 + \cdots + n = \frac{ n ( n + 1)}{2}
+      \]
+
+\item The recurrence \eqref{eq:msort} shows the worst-case running time $T(n)$ 
+      of mergesort:
+
+%%note that if you don't want eq auto numbering, use equation*
+
+      \begin{equation} 
+         T(n)=\begin{cases}
+               c             & \text{if $n = 1$},\\
+               2T(n/2) + cn  & \text{if $n > 1$}.  \label{eq:msort}
+              \end{cases}
+      \end{equation}
+
+      Using the master theorem in Chapter 4, we can 
+      get $T(n) = \Theta (n \log{} n)$.
+
+\item The recurrence \eqref{eq:bsearch} shows the worst-case running time $T(n)$
+      of binary search:
+
+      \begin{equation} 
+         T(n)=\begin{cases}
+               c             & \text{if $n = 1$},\\
+               T(n/2) + c    & \text{if $n > 1$}.  \label{eq:bsearch}
+              \end{cases}
+      \end{equation}
+
+      Using the master theorem in Chapter 4, we can 
+      get $T(n) = \Theta (\log{} n)$.
+
+
+\item Browse {\tt https://www.cs.dartmouth.edu/\textasciitilde thc/clrscode/clrscode3e.pdf} 
+      to learn how to use the clrscode3e package in LaTex  to typeset 
+      pseudocode.  
+
+\begin{codebox}
+\Procname{$\proc{Insertion-Sort}(A)$}
+\li \For $j \gets 2$ \To $\attrib{A}{length}$
+\li \Do
+        $\id{key} \gets A[j]$
+\li \Comment Insert $A[j]$ into the sorted sequence
+        $A[1 \twodots j-1]$.
+\li     $i \gets j-1$
+\li     \While $i > 0$ and $A[i] > \id{key}$
+\li     \Do
+            $A[i+1] \gets A[i]$
+\li         $i \gets i-1$
+        \End
+\li     $A[i+1] \gets \id{key}$
+    \End
+\end{codebox}
+
+      If $ f(n)= O(n^{\log_b a-\varepsilon}) $ for some constant $\varepsilon>0 $, then $ T(n)= \Theta(n^{\log_b a}) $
+
+   
+\end{enumerate}
+
+\end{document}
+
