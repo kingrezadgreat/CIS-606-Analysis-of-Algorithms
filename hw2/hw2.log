@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.15)  20 SEP 2019 14:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.15)  20 SEP 2019 14:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -243,7 +243,7 @@ Package epstopdf Info: Source file: <prob1-c.eps>
 (epstopdf)                    size: 7816 bytes
 (epstopdf)             Command: <repstopdf --outfile=prob1-c-eps-converted-to.p
 df prob1-c.eps>
-(epstopdf)             \includegraphics on input line 62.
+(epstopdf)             \includegraphics on input line 61.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -252,7 +252,7 @@ found PDF version <1.7>, but at most version <1.5> allowed
 <prob1-c-eps-converted-to.pdf, id=10, 578.16pt x 361.35pt>
 File: prob1-c-eps-converted-to.pdf Graphic file (type pdf)
 <use prob1-c-eps-converted-to.pdf>
-Package pdftex.def Info: prob1-c-eps-converted-to.pdf  used on input line 62.
+Package pdftex.def Info: prob1-c-eps-converted-to.pdf  used on input line 61.
 (pdftex.def)             Requested size: 289.07999pt x 180.67456pt.
 Package epstopdf Info: Source file: <prob1-d.eps>
 (epstopdf)                    date: 2019-09-17 12:40:24
@@ -262,7 +262,7 @@ Package epstopdf Info: Source file: <prob1-d.eps>
 (epstopdf)                    size: 7834 bytes
 (epstopdf)             Command: <repstopdf --outfile=prob1-d-eps-converted-to.p
 df prob1-d.eps>
-(epstopdf)             \includegraphics on input line 68.
+(epstopdf)             \includegraphics on input line 67.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -271,7 +271,7 @@ found PDF version <1.7>, but at most version <1.5> allowed
 <prob1-d-eps-converted-to.pdf, id=11, 578.16pt x 361.35pt>
 File: prob1-d-eps-converted-to.pdf Graphic file (type pdf)
 <use prob1-d-eps-converted-to.pdf>
-Package pdftex.def Info: prob1-d-eps-converted-to.pdf  used on input line 68.
+Package pdftex.def Info: prob1-d-eps-converted-to.pdf  used on input line 67.
 (pdftex.def)             Requested size: 289.07999pt x 180.67456pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -286,14 +286,14 @@ Missing character: There is no ¢ in font cmr6!
 Missing character: There is no â in font cmr6!
 Missing character: There is no € in font cmr6!
 Missing character: There is no ¢ in font cmr6!
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 103.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 102.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 103.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 102.
 Package epstopdf Info: Source file: <prob2.eps>
 (epstopdf)                    date: 2019-09-20 13:32:33
 (epstopdf)                    size: 42254 bytes
@@ -302,7 +302,7 @@ Package epstopdf Info: Source file: <prob2.eps>
 (epstopdf)                    size: 22662 bytes
 (epstopdf)             Command: <repstopdf --outfile=prob2-eps-converted-to.pdf
  prob2.eps>
-(epstopdf)             \includegraphics on input line 107.
+(epstopdf)             \includegraphics on input line 106.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -311,7 +311,7 @@ und PDF version <1.7>, but at most version <1.5> allowed
 <prob2-eps-converted-to.pdf, id=23, 722.7pt x 433.62pt>
 File: prob2-eps-converted-to.pdf Graphic file (type pdf)
 <use prob2-eps-converted-to.pdf>
-Package pdftex.def Info: prob2-eps-converted-to.pdf  used on input line 107.
+Package pdftex.def Info: prob2-eps-converted-to.pdf  used on input line 106.
 (pdftex.def)             Requested size: 361.34999pt x 216.80946pt.
 Missing character: There is no â in font cmr8!
 Missing character: There is no € in font cmr8!
