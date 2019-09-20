@@ -100,7 +100,7 @@
 	
 	\begin{itemize}
     	\item METHOD 1:
-     	The tree of $ S(m) = 3S(m/2) + m$ looks like Figure.\ref{fig:prob2} once it is expanded:
+     	According to Figure 4.7 of textbook on page 99, the tree expansion of $ S(m) = 3S(m/2) + m$ will be like Figure.\ref{fig:prob2} in the following:
      	
 		\begin{figure}[h!]
 			\centerline{\includegraphics[width=5in]{prob2.eps}}
@@ -108,21 +108,19 @@
 			\label{fig:prob2}
 		\end{figure}
 	
-		$sum =m+\frac{3}{2}m+{(\frac{3}{2})}^2m+...+{(\frac{3}{2})}^{\log_2{m-1}}m+{(\frac{3}{2})}^{\log_2{m}}$
-	
-		$sum =m(1+\frac{3}{2}+{(\frac{3}{2})}^2+...+{(\frac{3}{2})}^{\log_2{m-1}})+{(\frac{3}{2})}^{\log_2{m}}$
-	
-		$sum =m(\sum_{k=0}^{\log_2{(m-1)}} (\frac{3}{2})^k)+{(\frac{3}{2})}^{\log_2{m}}$
-	
-		$sum =m(  \frac{1-\frac{3}{2}^{\log_2{(m)}}}{1-\frac{3}{2}}   )+{(\frac{3}{2})}^{\log_2{m}}$
-	
-		$sum = m( \frac{3}{2}^{\log_2{m}}   )  $
-	
-	
-		$S(m)=sum*\log_2{m} = m( \frac{3}{2}^{\log_2{m}}   )\log_2{m} = m\log_2{m}( \frac{3}{2}^{\log_2{m}}   )  $
-	
-		$ \overset{m=\log_2{n}}{\implies} $ 
-		$T(n) = \log_2{n}.\log_2{(\log_2{n})}.( \frac{3}{2}^{log_2{\log_2{n}}}   )  $
+		$S(m) = m+\frac{3}{2}m+{(\frac{3}{2})}^2m+...+{(\frac{3}{2})}^{\log_2{m-1}}m+\Theta(3^{\log_2{m}})$
+		
+		$S(m) = \sum_{k=0}^{\log_2{(m-1)}} {(\frac{3}{2})}^k m + \Theta(3^{\log_2{m}})  $
+		
+		Since $	\Theta(3^{\log_2{m}})  $ is the dominant term in the bracket (leave dominant), $S(m)$ can be simpliefied to :
+		
+		$S(m) = \Theta(3^{\log_2{m}}) $
+
+		By flipping $m$ and $3$, $S(m)$ becomes:
+		
+		$S(m) = \Theta(m^{\log_2{3}}) $
+		$\overset{m=\log_2{n}}{\implies}T(n)=\log_2{n}^{\log_3{2}}$	
+	    
     \end{itemize}	
 	
 
@@ -147,6 +145,8 @@
   		 
 
     \end{itemize}
+    
+    As you case Method 1 and Method 2 yield the same result.
 	
 	
 	
