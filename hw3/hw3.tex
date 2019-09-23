@@ -6,6 +6,7 @@
 \usepackage{amsmath}
 
 
+
 \setlength{\oddsidemargin}{0in}
 \setlength{\textwidth}{6.5in}
 \setlength{\topmargin}{-0.5in}
@@ -15,7 +16,7 @@
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lhead{HW2}
+\lhead{HW3}
 \rhead{Reza Shisheie}
 
 \usepackage{epsfig,graphicx}
@@ -29,7 +30,7 @@
 \thispagestyle{plain}
 
 \begin{center}
-{\Large \bf CIS 606 \hfil Homework 2 \hfil Fall 2019} \\
+{\Large \bf CIS 606 \hfil Homework 3 \hfil Fall 2019} \\
 \end{center}
 
 \vskip 1in 
@@ -37,6 +38,7 @@
 \centerline{\includegraphics[width=3in]{photo.jpg}}
 
 \vskip 0.5in 
+
 
 \begin{center}
 \begin{tabular}{ll}
@@ -51,23 +53,45 @@
 
 \itemsep 0.35in
 
-
-\item Use a drawing tool to draw figure 6.5 (c) and (d) on page 165: 
-
-	Figure.\ref{fig:prob1-c} and \ref{fig:prob1-d} show the two figures from book:
+\item Exercise 4.2-6 (Textbook page 83): 
 
 	
-	\begin{figure}[h!]
-		\centerline{\includegraphics[width=4in]{prob1-c.eps}}
-		\caption{From book, Figure 6.5 (c) on page 165}
-		\label{fig:prob1-c}
-	\end{figure}
-	
-	\begin{figure}[h!]
-		\centerline{\includegraphics[width=4in]{prob1-d.eps}}
-		\caption{From book, Figure 6.5 (d) on page 165}
-		\label{fig:prob1-d}
-	\end{figure}
+
+
+\item Exercise 4.2-7 (Textbook page 83): 
+
+
+\item Exercise 4.5-2 (Textbook page 97): 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -100,29 +124,22 @@
 	
 	\begin{itemize}
     	\item METHOD 1:
-     	The tree of $ S(m) = 3S(m/2) + m$ looks like Figure.\ref{fig:prob2} once it is expanded:
+     	According to Figure 4.7 of textbook on page 99, the tree expansion of $ S(m) = 3S(m/2) + m$ will be like in the following:
      	
-		\begin{figure}[h!]
-			\centerline{\includegraphics[width=5in]{prob2.eps}}
-			\caption{Expanded tree}
-			\label{fig:prob2}
-		\end{figure}
 	
-		$sum =m+\frac{3}{2}m+{(\frac{3}{2})}^2m+...+{(\frac{3}{2})}^{\log_2{m-1}}m+{(\frac{3}{2})}^{\log_2{m}}$
-	
-		$sum =m(1+\frac{3}{2}+{(\frac{3}{2})}^2+...+{(\frac{3}{2})}^{\log_2{m-1}})+{(\frac{3}{2})}^{\log_2{m}}$
-	
-		$sum =m(\sum_{k=0}^{\log_2{(m-1)}} (\frac{3}{2})^k)+{(\frac{3}{2})}^{\log_2{m}}$
-	
-		$sum =m(  \frac{1-\frac{3}{2}^{\log_2{(m)}}}{1-\frac{3}{2}}   )+{(\frac{3}{2})}^{\log_2{m}}$
-	
-		$sum = m( \frac{3}{2}^{\log_2{m}}   )  $
-	
-	
-		$S(m)=sum*\log_2{m} = m( \frac{3}{2}^{\log_2{m}}   )\log_2{m} = m\log_2{m}( \frac{3}{2}^{\log_2{m}}   )  $
-	
-		$ \overset{m=\log_2{n}}{\implies} $ 
-		$T(n) = \log_2{n}.\log_2{(\log_2{n})}.( \frac{3}{2}^{log_2{\log_2{n}}}   )  $
+		$S(m) = m+\frac{3}{2}m+{(\frac{3}{2})}^2m+...+{(\frac{3}{2})}^{\log_2{m-1}}m+\Theta(3^{\log_2{m}})$
+		
+		$S(m) = \sum_{k=0}^{\log_2{(m-1)}} {(\frac{3}{2})}^k m + \Theta(3^{\log_2{m}})  $
+		
+		Since $	\Theta(3^{\log_2{m}})  $ is the dominant term in the bracket (leave dominant), $S(m)$ can be simpliefied to :
+		
+		$S(m) = \Theta(3^{\log_2{m}}) $
+
+		By flipping $m$ and $3$, $S(m)$ becomes:
+		
+		$S(m) = \Theta(m^{\log_2{3}}) $
+		$\overset{m=\log_2{n}}{\implies}T(n)=\log_2{n}^{\log_3{2}}$	
+	    
     \end{itemize}	
 	
 
@@ -133,15 +150,22 @@
 	    
     	$a=3$, $b=2$, $f(m)=m$
     	
-    	$m^{\log_b{a}-\epsilon} \overset{\epsilon=0.5}{=} m^{\log_{2}{3}-0.5}=m^{1.58-0.5}=m^{1.08}$  
-	    $\overset{\mathrm{•}}{\implies} f(m)=O(m^{\log_b{a}-\epsilon}):\epsilon=0.5$
+    	$m^{\log_b{a}-\epsilon} \overset{}{=} m^{\log_{2}{3}-\epsilon}=m^{1.58-\epsilon}\overset{\epsilon=0.58}{=}m$  
+	    $\overset{\mathrm{•}}{\implies} f(m)=O(m^{\log_b{a}-\epsilon}):\epsilon=0.58$
 	    
-	    $\overset{\mathrm{Case 1}}{\implies} T(m)=\Theta(m^{\log_b{a}})$	
-	    $ ???$	
+	    $\overset{\mathrm{Case 1}}{\implies} S(m)=\Theta(m^{\log_b{a}})$	
+	    $\overset{\mathrm{}}{=}T(2^m)$
+	    $\overset{\mathrm{}}{=}T(n)$
+	    $\overset{m=\log_2{n}}{\implies}T(n)=\log_2{n}^{\log_b{a}}$	
+	    $\overset{}{\implies}$
+	    
+	    $T(n)=\log_2{n}^{\log_2{3}}$	
   		%$\overset{m=\log_2{n}}{\implies} T(2^{m})=T(n)=\Theta(m^{\log_b{a}})$
   		 
 
     \end{itemize}
+    
+    As you case Method 1 and Method 2 yield the same result.
 	
 	
 	
@@ -186,32 +210,14 @@
         	af(n/b)=f(7n/10)=7n/10\\
         	cf(n)=8n/10\\
         \end{array}\right\}
-    $
-%    $ \overset{}{\implies} \frac{7n}{10} \leq \frac{8n}{10}$
+    $ 
     $ \overset{}{\implies} af(n/b)\leq cf(n)$
+     is valid!
     
-    $ \overset{\mathrm{Case 3}}{\implies} T(n)=\Theta(f(n).\log{n})$
-    $ \overset{}{\implies} T(n)=\Theta(n\log{n})$
+    $ \overset{\mathrm{Case 3}}{\implies} T(n)=\Theta(f(n))$
+    $ \overset{}{\implies} T(n)=\Theta(n)$
 
 
-%	If $a=1$, $b=10/7$, $c=100 \overset{}{\implies} f(7n/10)=\leq cf(n) \overset{}{\implies} af(n/b)\leq cf(n)$
-
-
-%	If 	
-%	$
-%	\left.\begin{aligned}
-%	  a&=1\\
-%	  b&=\frac{10}{7}\\
-%	  c&=100\\
-%	\end{aligned}\right\} = stuff	
-%	$
-
-	
-%	$\left.\begin{aligned}
-%	  a&=bbb\\
-%	  c&=ddddddd\\
-%	  e&=ffffff
-%	\end{aligned}\right\} = stuff	$
 
 \item Problem 4.1c (Textbook page 107):
 
@@ -220,9 +226,10 @@
 	$a=16$, $b=4$, $f(n)=n^{2}$,
 	
 	$n^{\log_b{a}} \overset{}{=} n^{\log_{4}{16}}=n^{2}  
-	\overset{}{\implies} f(n)=\Theta(n^{\log_b{a}})$
+	\overset{}{\implies} f(n)=\Theta(n^{\log_b{a}}.\log{n})$
 	
-	$	\overset{\mathrm{Case 2}}{\implies} f(n)=\Theta(n^{2})$
+	$	\overset{\mathrm{Case 2}}{\implies} f(n)=\Theta(n^{2}.\log{n})$
+	
 	
 
 
