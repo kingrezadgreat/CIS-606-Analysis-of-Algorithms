@@ -4,6 +4,11 @@
 \usepackage{epstopdf}
 \usepackage{multirow}
 \usepackage{amsmath}
+\usepackage{bbding}
+\usepackage{pifont}
+\usepackage{wasysym}
+\usepackage{amssymb}
+%%\usepackage[parfill]{parskip}
 
 
 
@@ -54,139 +59,165 @@
 \itemsep 0.35in
 
 \item Exercise 4.2-6 (Textbook page 83): 
+	
+	Assuming 
+	
+	
+	\hspace{10mm} \begin{math}
+		A_{i}=
+		\begin{bmatrix}
+		  A_{i, 1\times 1}	&\cdots &A_{i, 1\times n}\\
+		  \vdots			&\ddots &\vdots\\
+		  A_{i, n\times 1}	&\cdots	&A_{i, n\times n}
+		\end{bmatrix}_{n \times n}
+		,
+		B_{i}=
+		\begin{bmatrix}
+		  B_{i, 1\times 1}	&\cdots &B_{i, 1\times n}\\
+		  \vdots			&\ddots &\vdots\\
+		  B_{i, n\times 1}	&\cdots	&B_{i, n\times n}
+		\end{bmatrix}_{n \times n}
+		, 
+		i \epsilon [1,...,k]
+	\end{math}
+	
+	where, 
+	
+	\hspace{10mm} \begin{math}
+		A=
+		\begin{bmatrix}
+		  A_{1}	\\
+		  \vdots\\
+		  A_{i}	
+		\end{bmatrix}_{kn \times n}
+		, 
+		B=
+		\begin{bmatrix}
+		  B_{1}	&\cdots &B_{i}
+		\end{bmatrix}_{n \times kn}
+		, 
+		i \epsilon [1,...,k]
+	\end{math}
+	
+	
+	\begin{itemize}
+    	\item Forward Solution:
 
+		Thus the product of $A \times B$ is a $kn \times kn$ matrix:
+	
+		\hspace{10mm} \begin{math}
+			A \times B=
+			\begin{bmatrix}
+			  A_{1} \times B_{1} &\cdots & A_{1} \times B_{i}\\
+			  \vdots			 &\ddots & \vdots\\
+			  A_{i} \times B_{1} &\cdots & A_{i} \times B_{i}
+			\end{bmatrix}_{kn \times kn}
+		, 
+			i \epsilon [1,...,k]
+		\end{math}
+	
+		where time complexity of each $A_{i} \times B_{i}$ costs $\Theta(n^{\log_2{7}})$ according to Strassen's algorithm. Since there are $k^2$ matrix multiplications, time complexity of  $A \times B$ is:
+	
+		\hspace{10mm} $T(n)_{A \times B}=k^2.\Theta(n^{\log_2{7}})=\Theta(k^2.n^{\log_2{7}})$
+	\end{itemize}
+	
+	\begin{itemize}
+    	\item Reverse Solution:
+		For the reverse multiplication, the product of $B \times A$ is a $n \times n$ matrix:
+	
+		\hspace{10mm} \begin{math}
+			B \times A=
+			\begin{bmatrix}
+			  B_{1} \times A_{1}+ \cdots +B_{i} \times A_{i}
+			\end{bmatrix}_{n \times n}
+		\end{math}
+		\begin{math}
+			=
+			\begin{bmatrix}
+			  \sum_{i=1}^{k} {B_{i} \times A_{i}}
+			\end{bmatrix}_{n \times n}
+		\end{math}
+
+		where time complexity of each $B_{i} \times A_{i}$ costs $\Theta(n^{\log_2{7}})$ according to Strassen's algorithm. Since there are $k$ matrix-multiplications in the summation, time complexity of  $B \times A$ is:
+	
+		\hspace{10mm} $T(n)_{B \times A}=k.\Theta(n^{\log_2{7}})=\Theta(k.n^{\log_2{7}})$
+
+
+	\end{itemize}
+
+	
+	
+	
 	
 
 
 \item Exercise 4.2-7 (Textbook page 83): 
+	
+	Assuming $A=a+bi$ and $B=c+di$, then $A.B$ is:
+	
+	\hspace{10mm} $A.B=(ac-bd)+(ad+bc).i$
+    $ \overset{}{\implies}$
+	$
+	    \left\{\begin{array}{lr}
+	    
+        	\mathrm{Real} = (ac-bd)\\
+        	\mathrm{Imag} = (ad+bc)
+        \end{array}\right\}
+    $ 
+
+
+	Assuming $u$, $v$, and $w$ as follows: 
+	
+	\hspace{10mm} $ u = (a+b).(c+d)=ac+ad+bc+bd$;  // counts as 2 sum and 1 multiplication 
+	
+	\hspace{10mm} $ v = ac$;  // counts as 1 multiplication between $a$ and $c$
+		
+	\hspace{10mm} $ w = bd$;  // counts as 1 multiplication between $b$ and $d$
+	
+	Then "Real" and "Imaginary" parts are:
+	
+	\hspace{10mm} $\mathrm{Real} = v-w;$  // counts as 1 sum   
+		
+	\hspace{10mm} $\mathrm{Imag} = u-v-w;$  // counts as 2 sum 
+	
+	Thus, "Real" is computed with 1 summation and "Imag" is computed with 2 sumations, and both share the same 3 multiplications. In total "Real" and "Imag" are computed with 3 multiplications and 3 summations.
+	
+	
+	
+	
+	
 
 
 \item Exercise 4.5-2 (Textbook page 97): 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\item Problem 3-4f (Textbook page 62):
-
-	If $ f(n)= O(g(n)) $ $\implies$ $ \exists $ $ c, $ $ n_0>0 $ such that $ 0 \leq f(n) \leq cg(n) $ for all $ n \geq n_0 $  
+	Considering Strassen's Algorithm, complexity of $T(n)=7T(\frac{n}{2})+\Theta(n^{2})$ is $\Theta(n^{log_2{7}})$. Since Strassen's algorithm is proven using CASE I of Master's theorem, it means that the Strassen recurence is root dominant. 
 	
-	If $ g(n)= \Omega(f(n)) $ $\implies$ $ \exists $ $ c{'}, $ $ n_0>0 $ such that $ 0 \leq c{'}f(n) \leq g(n) $ for all $ n \geq n_0 $     
+	The recurence relation of Professor Caesar is $T(n)=aT(\frac{n}{4})+\Theta(n^{2})$ and ths its complexity - basd on Strassen's algorithm - is: 
 	
-	Considering the two inequalities, if the first inequality is divided by $c$ and $c{'} = 1/c$, then second inequality is achieved. Thus, two inequalities are the same and $c{'} = 1/c$.  
-
-
-
-
-
-\pagebreak
-
-\item Problem 4.3-9 (Textbook page 88):
+	\hspace{10mm} $T(n)_{Caesar} = \Theta(n^{\log_4{a}})$	
 	
-	$ T(n) = 3T(\sqrt[•]{n}) + \log(n) $ 
-	$ \overset{n=2^m}{\implies} $ 
-	$ T(2^m) = 3T(\sqrt[•]{2^m}) + \log(2^m) $ 
-	$ \implies $ 
-	$T(2^m) = 3T(2^{m/2}) + m $ 
-	$ \overset{S(m)=T(2^m) \implies S(m/2)=T(2^{m/2})}{\implies} $ 
-	$ S(m) = 3S(m/2) + m$ 
+	If Professor Caesar's algorithm is better than Strassen algorithm, then complexity of branches must attenuate faster as it branches down. In otherwords:
 	
+	\hspace{10mm} $T(n)_{Caesar} < T(n)_{Strassen}$
+	$\overset{\mathrm{}}{\implies}$
+	$n^{\log_4{a}} < n^{\log_2{7}}$
+	$\overset{\mathrm{}}{\implies}$
+	$\log_4{a} < \log_2{7}$
+	$\overset{\mathrm{}}{\implies}$
 	
-	\begin{itemize}
-    	\item METHOD 1:
-     	According to Figure 4.7 of textbook on page 99, the tree expansion of $ S(m) = 3S(m/2) + m$ will be like in the following:
-     	
-	
-		$S(m) = m+\frac{3}{2}m+{(\frac{3}{2})}^2m+...+{(\frac{3}{2})}^{\log_2{m-1}}m+\Theta(3^{\log_2{m}})$
-		
-		$S(m) = \sum_{k=0}^{\log_2{(m-1)}} {(\frac{3}{2})}^k m + \Theta(3^{\log_2{m}})  $
-		
-		Since $	\Theta(3^{\log_2{m}})  $ is the dominant term in the bracket (leave dominant), $S(m)$ can be simpliefied to :
-		
-		$S(m) = \Theta(3^{\log_2{m}}) $
-
-		By flipping $m$ and $3$, $S(m)$ becomes:
-		
-		$S(m) = \Theta(m^{\log_2{3}}) $
-		$\overset{m=\log_2{n}}{\implies}T(n)=\log_2{n}^{\log_3{2}}$	
-	    
-    \end{itemize}	
-	
-
-	\begin{itemize}
-	    \item METHOD 2:
-	    
-	    Using Master theorem for $ S(m) = 3S(m/2) + m$ :
-	    
-    	$a=3$, $b=2$, $f(m)=m$
-    	
-    	$m^{\log_b{a}-\epsilon} \overset{}{=} m^{\log_{2}{3}-\epsilon}=m^{1.58-\epsilon}\overset{\epsilon=0.58}{=}m$  
-	    $\overset{\mathrm{•}}{\implies} f(m)=O(m^{\log_b{a}-\epsilon}):\epsilon=0.58$
-	    
-	    $\overset{\mathrm{Case 1}}{\implies} S(m)=\Theta(m^{\log_b{a}})$	
-	    $\overset{\mathrm{}}{=}T(2^m)$
-	    $\overset{\mathrm{}}{=}T(n)$
-	    $\overset{m=\log_2{n}}{\implies}T(n)=\log_2{n}^{\log_b{a}}$	
-	    $\overset{}{\implies}$
-	    
-	    $T(n)=\log_2{n}^{\log_2{3}}$	
-  		%$\overset{m=\log_2{n}}{\implies} T(2^{m})=T(n)=\Theta(m^{\log_b{a}})$
-  		 
-
-    \end{itemize}
-    
-    As you case Method 1 and Method 2 yield the same result.
-	
+	\hspace{10mm} $\log_2{\sqrt{a}} < \log_2{7}$
+	$\overset{\mathrm{}}{\implies}$
+	$\sqrt{a}<7$
+	$\overset{\mathrm{}}{\implies}$
+	$a<49$
+	$\checkmark$
 	
 	
 	
 
 	
 	
-	 
-\pagebreak
-	
-\item Problem 4.5-1a (Textbook page 96):
-	
-	$T(n)=2T(n/4)+1$
-	
-	$a=2$, $b=4$, $f(n)=1$
-	
-	$n^{\log_b{a}-\epsilon} \overset{\epsilon=0.5}{=} n^{(\log_4{2})-0.5}=n^{0}=1
-	\overset{\mathrm{•}}{\implies} f(n)=O(n^{\log_b{a}-\epsilon}):\epsilon=0.5$
-	
-	$\overset{\mathrm{Case 1}}{\implies} T(n)=\Theta(n^{\log_b{a}})=\Theta(n^{\log_4{2}})=\Theta(\sqrt[•]{n}) 
-	\overset{\mathrm{•}}{\implies} T(n)=\Theta(\sqrt[•]{n}) $ 
+	   
 
 
 
@@ -194,43 +225,28 @@
 
 
 
-\item Problem 4-1b (Textbook page 107):
-
-	$T(n)=T(7n/10)+n$
-
-	$a=1$, $b=10/7$, $f(n)=n$, 
-	
-	$n^{\log_b{a}+\epsilon} \overset{}{=} n^{\log_{10/7}{1}+\epsilon}=n^{0+\epsilon}\overset{\epsilon = 1}{=}n^{1}=n  
-	\overset{}{\implies} f(n)=\Omega(n)
-	\overset{}{\implies} f(n)=\Omega(n^{\log_b{a}+\epsilon}):\epsilon=0.5$
-	
-	If $c=8/10$ and $c<1 \overset{}{\implies} $
-	$
-	    \left\{\begin{array}{lr}
-        	af(n/b)=f(7n/10)=7n/10\\
-        	cf(n)=8n/10\\
-        \end{array}\right\}
-    $ 
-    $ \overset{}{\implies} af(n/b)\leq cf(n)$
-     is valid!
-    
-    $ \overset{\mathrm{Case 3}}{\implies} T(n)=\Theta(f(n))$
-    $ \overset{}{\implies} T(n)=\Theta(n)$
 
 
 
-\item Problem 4.1c (Textbook page 107):
 
-	$T(n)=16T(n/4)+n^{2}$
-	
-	$a=16$, $b=4$, $f(n)=n^{2}$,
-	
-	$n^{\log_b{a}} \overset{}{=} n^{\log_{4}{16}}=n^{2}  
-	\overset{}{\implies} f(n)=\Theta(n^{\log_b{a}}.\log{n})$
-	
-	$	\overset{\mathrm{Case 2}}{\implies} f(n)=\Theta(n^{2}.\log{n})$
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
