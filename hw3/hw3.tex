@@ -190,22 +190,24 @@
 
 \item Exercise 4.5-2 (Textbook page 97): 
 
-	Considering Strassen's Algorithm, complexity of $T(n)=7T(\frac{n}{2})+\Theta(n^{2})$ is $\Theta(n^{log_2{7}})$. Since Strassen's algorithm is proven using CASE I of Master's theorem, it means that the Strassen recurence is root dominant. 
+	Considering Strassen's Algorithm, complexity of $T(n)=7T(\frac{n}{2})+\Theta(n^{2})$ is $\Theta(n^{log_2{7}})$. Since Strassen's algorithm is proven using CASE I of Master's theorem, it means that the Strassen recurence is leave dominant. 
 	
 	The recurence relation of Professor Caesar is $T(n)=aT(\frac{n}{4})+\Theta(n^{2})$ and ths its complexity - basd on Strassen's algorithm - is: 
 	
 	\hspace{10mm} $T(n)_{Caesar} = \Theta(n^{\log_4{a}})$	
 	
-	If Professor Caesar's algorithm is better than Strassen algorithm, then complexity of branches must attenuate faster as it branches down. In otherwords:
+	If Professor Caesar's algorithm is better than Strassen algorithm, then its complexity must be smaller than the Sterassen's. In otherwords:
 	
 	\hspace{10mm} $T(n)_{Caesar} < T(n)_{Strassen}$
 	$\overset{\mathrm{}}{\implies}$
+	$\Theta(n^{\log_4{a}}) < \Theta(n^{\log_2{7}})$
+	$\overset{\mathrm{}}{\implies}$
 	$n^{\log_4{a}} < n^{\log_2{7}}$
 	$\overset{\mathrm{}}{\implies}$
-	$\log_4{a} < \log_2{7}$
-	$\overset{\mathrm{}}{\implies}$
 	
-	\hspace{10mm} $\log_2{\sqrt{a}} < \log_2{7}$
+	\hspace{10mm} $\log_4{a} < \log_2{7}$
+	$\overset{\mathrm{}}{\implies}$
+	$\log_2{\sqrt{a}} < \log_2{7}$
 	$\overset{\mathrm{}}{\implies}$
 	$\sqrt{a}<7$
 	$\overset{\mathrm{}}{\implies}$
