@@ -1,0 +1,513 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.15)  13 OCT 2019 14:35
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**hw4.tex
+(./hw4.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip43
+\multirow@cntb=\count87
+\multirow@dima=\skip44
+\bigstrutjot=\dimen103
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen104
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks16
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks17
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks18
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/bbding/bbding.sty
+Package: bbding 1999/04/15 v1.01 Dingbats symbols
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen113
+\captionmargin@=\dimen114
+\captionwidth=\dimen115
+\caption@tempdima=\dimen116
+\caption@indent=\dimen117
+\caption@parindent=\dimen118
+\caption@hangindent=\dimen119
+)
+\c@ContinuedFloat=\count100
+)
+\c@subfigure=\count101
+\c@subtable=\count102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip48
+\f@nch@O@elh=\skip49
+\f@nch@O@erh=\skip50
+\f@nch@O@olh=\skip51
+\f@nch@O@orh=\skip52
+\f@nch@O@elf=\skip53
+\f@nch@O@erf=\skip54
+\f@nch@O@olf=\skip55
+\f@nch@O@orf=\skip56
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
+)
+\epsfxsize=\dimen122
+\epsfysize=\dimen123
+)
+(./clrscode3e.sty
+Package: clrscode3e 
+\c@codelinenumber=\count103
+\c@indent=\count104
+\digitwidth=\skip57
+\savecode=\box28
+\codeboxwidth=\skip58
+\c@thisindent=\count105
+) (./hw4.aux
+
+LaTeX Warning: Label `fig:prob-6-3-1_6' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:prob-6-3-1_6' multiply defined.
+
+)
+\openout1 = `hw4.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count106
+\scratchdimen=\dimen124
+\scratchbox=\box29
+\nofMPsegments=\count107
+\nofMParguments=\count108
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count109
+\MPscratchDim=\dimen125
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
+\everyMPtoPDFconversion=\toks21
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+<photo.jpg, id=1, 1084.05pt x 722.7pt>
+File: photo.jpg Graphic file (type jpg)
+<use photo.jpg>
+Package pdftex.def Info: photo.jpg  used on input line 45.
+(pdftex.def)             Requested size: 216.81pt x 144.53743pt.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 51.
+ (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 51.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 51.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./photo.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]
+Package epstopdf Info: Source file: <prob-6-3-1_1.eps>
+(epstopdf)                    date: 2019-10-11 15:54:22
+(epstopdf)                    size: 14122 bytes
+(epstopdf)             Output file: <prob-6-3-1_1-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-10-11 15:55:13
+(epstopdf)                    size: 8362 bytes
+(epstopdf)             Command: <repstopdf --outfile=prob-6-3-1_1-eps-converted
+-to.pdf prob-6-3-1_1.eps>
+(epstopdf)             \includegraphics on input line 145.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./prob-6-3-1_1-eps-converted-to.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<prob-6-3-1_1-eps-converted-to.pdf, id=22, 578.16pt x 361.35pt>
+File: prob-6-3-1_1-eps-converted-to.pdf Graphic file (type pdf)
+<use prob-6-3-1_1-eps-converted-to.pdf>
+Package pdftex.def Info: prob-6-3-1_1-eps-converted-to.pdf  used on input line 
+145.
+(pdftex.def)             Requested size: 180.67499pt x 112.9216pt.
+Package epstopdf Info: Source file: <prob-6-3-1_2.eps>
+(epstopdf)                    date: 2019-10-11 15:56:43
+(epstopdf)                    size: 14122 bytes
+(epstopdf)             Output file: <prob-6-3-1_2-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-10-11 16:03:45
+(epstopdf)                    size: 8348 bytes
+(epstopdf)             Command: <repstopdf --outfile=prob-6-3-1_2-eps-converted
+-to.pdf prob-6-3-1_2.eps>
+(epstopdf)             \includegraphics on input line 150.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./prob-6-3-1_2-eps-converted-to.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<prob-6-3-1_2-eps-converted-to.pdf, id=23, 578.16pt x 361.35pt>
+File: prob-6-3-1_2-eps-converted-to.pdf Graphic file (type pdf)
+<use prob-6-3-1_2-eps-converted-to.pdf>
+Package pdftex.def Info: prob-6-3-1_2-eps-converted-to.pdf  used on input line 
+150.
+(pdftex.def)             Requested size: 180.67499pt x 112.9216pt.
+Package epstopdf Info: Source file: <prob-6-3-1_3.eps>
+(epstopdf)                    date: 2019-10-11 15:59:34
+(epstopdf)                    size: 14122 bytes
+(epstopdf)             Output file: <prob-6-3-1_3-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-10-11 16:06:18
+(epstopdf)                    size: 8351 bytes
+(epstopdf)             Command: <repstopdf --outfile=prob-6-3-1_3-eps-converted
+-to.pdf prob-6-3-1_3.eps>
+(epstopdf)             \includegraphics on input line 156.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./prob-6-3-1_3-eps-converted-to.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<prob-6-3-1_3-eps-converted-to.pdf, id=24, 578.16pt x 361.35pt>
+File: prob-6-3-1_3-eps-converted-to.pdf Graphic file (type pdf)
+<use prob-6-3-1_3-eps-converted-to.pdf>
+Package pdftex.def Info: prob-6-3-1_3-eps-converted-to.pdf  used on input line 
+156.
+(pdftex.def)             Requested size: 180.67499pt x 112.9216pt.
+Package epstopdf Info: Source file: <prob-6-3-1_4.eps>
+(epstopdf)                    date: 2019-10-11 16:09:14
+(epstopdf)                    size: 14122 bytes
+(epstopdf)             Output file: <prob-6-3-1_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-10-11 16:09:28
+(epstopdf)                    size: 8371 bytes
+(epstopdf)             Command: <repstopdf --outfile=prob-6-3-1_4-eps-converted
+-to.pdf prob-6-3-1_4.eps>
+(epstopdf)             \includegraphics on input line 161.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./prob-6-3-1_4-eps-converted-to.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<prob-6-3-1_4-eps-converted-to.pdf, id=25, 578.16pt x 361.35pt>
+File: prob-6-3-1_4-eps-converted-to.pdf Graphic file (type pdf)
+<use prob-6-3-1_4-eps-converted-to.pdf>
+Package pdftex.def Info: prob-6-3-1_4-eps-converted-to.pdf  used on input line 
+161.
+(pdftex.def)             Requested size: 180.67499pt x 112.9216pt.
+Package epstopdf Info: Source file: <prob-6-3-1_5.eps>
+(epstopdf)                    date: 2019-10-11 16:11:13
+(epstopdf)                    size: 14248 bytes
+(epstopdf)             Output file: <prob-6-3-1_5-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-10-11 16:13:37
+(epstopdf)                    size: 8473 bytes
+(epstopdf)             Command: <repstopdf --outfile=prob-6-3-1_5-eps-converted
+-to.pdf prob-6-3-1_5.eps>
+(epstopdf)             \includegraphics on input line 167.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./prob-6-3-1_5-eps-converted-to.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<prob-6-3-1_5-eps-converted-to.pdf, id=26, 578.16pt x 361.35pt>
+File: prob-6-3-1_5-eps-converted-to.pdf Graphic file (type pdf)
+<use prob-6-3-1_5-eps-converted-to.pdf>
+Package pdftex.def Info: prob-6-3-1_5-eps-converted-to.pdf  used on input line 
+167.
+(pdftex.def)             Requested size: 180.67499pt x 112.9216pt.
+Package epstopdf Info: Source file: <prob-6-3-1_6.eps>
+(epstopdf)                    date: 2019-10-11 16:12:07
+(epstopdf)                    size: 14248 bytes
+(epstopdf)             Output file: <prob-6-3-1_6-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-10-11 16:13:38
+(epstopdf)                    size: 8452 bytes
+(epstopdf)             Command: <repstopdf --outfile=prob-6-3-1_6-eps-converted
+-to.pdf prob-6-3-1_6.eps>
+(epstopdf)             \includegraphics on input line 172.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./prob-6-3-1_6-eps-converted-to.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<prob-6-3-1_6-eps-converted-to.pdf, id=27, 578.16pt x 361.35pt>
+File: prob-6-3-1_6-eps-converted-to.pdf Graphic file (type pdf)
+<use prob-6-3-1_6-eps-converted-to.pdf>
+Package pdftex.def Info: prob-6-3-1_6-eps-converted-to.pdf  used on input line 
+172.
+(pdftex.def)             Requested size: 180.67499pt x 112.9216pt.
+Package epstopdf Info: Source file: <prob-6-3-1_7.eps>
+(epstopdf)                    date: 2019-10-11 16:12:56
+(epstopdf)                    size: 14248 bytes
+(epstopdf)             Output file: <prob-6-3-1_7-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-10-11 16:13:38
+(epstopdf)                    size: 8475 bytes
+(epstopdf)             Command: <repstopdf --outfile=prob-6-3-1_7-eps-converted
+-to.pdf prob-6-3-1_7.eps>
+(epstopdf)             \includegraphics on input line 178.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./prob-6-3-1_7-eps-converted-to.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<prob-6-3-1_7-eps-converted-to.pdf, id=28, 578.16pt x 361.35pt>
+File: prob-6-3-1_7-eps-converted-to.pdf Graphic file (type pdf)
+<use prob-6-3-1_7-eps-converted-to.pdf>
+Package pdftex.def Info: prob-6-3-1_7-eps-converted-to.pdf  used on input line 
+178.
+(pdftex.def)             Requested size: 180.67499pt x 112.9216pt.
+[3 <./prob-6-3-1_1-eps-converted-to.pdf> <./prob-6-3-1_2-eps-converted-to.pdf> 
+<./prob-6-3-1_3-eps-converted-to.pdf> <./prob-6-3-1_4-eps-converted-to.pdf> <./
+prob-6-3-1_5-eps-converted-to.pdf> <./prob-6-3-1_6-eps-converted-to.pdf> <./pro
+b-6-3-1_7-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <prob-6-5-9.eps>
+(epstopdf)                    date: 2019-10-13 13:39:57
+(epstopdf)                    size: 47388 bytes
+(epstopdf)             Output file: <prob-6-5-9-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-10-13 13:40:03
+(epstopdf)                    size: 26063 bytes
+(epstopdf)             Command: <repstopdf --outfile=prob-6-5-9-eps-converted-t
+o.pdf prob-6-5-9.eps>
+(epstopdf)             \includegraphics on input line 196.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./prob-6-5-9-eps-converted-to.pdf): PDF inclusio
+n: found PDF version <1.7>, but at most version <1.5> allowed
+<prob-6-5-9-eps-converted-to.pdf, id=46, 578.16pt x 361.35pt>
+File: prob-6-5-9-eps-converted-to.pdf Graphic file (type pdf)
+<use prob-6-5-9-eps-converted-to.pdf>
+Package pdftex.def Info: prob-6-5-9-eps-converted-to.pdf  used on input line 19
+6.
+(pdftex.def)             Requested size: 289.07999pt x 180.67456pt.
+[4 <./prob-6-5-9-eps-converted-to.pdf>] (./hw4.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4175 strings out of 492982
+ 60907 string characters out of 6134896
+ 125729 words of memory out of 5000000
+ 7656 multiletter control sequences out of 15000+600000
+ 10532 words of font info for 40 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,10n,43p,487b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on hw4.pdf (4 pages, 354491 bytes).
+PDF statistics:
+ 90 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+
